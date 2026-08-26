@@ -4,16 +4,15 @@
 #SBATCH -p cpu  # Partition
 #SBATCH -t 24:00:00  # Job time limit
 #SBATCH --mail-type=ALL
-#SBATCH -o /scratch4/workspace/jade_fiorilla_student_uml_edu-rawseqpic/23LVKKLT3/10606/slurm-checksum-%j.out  # %j = job ID
+#SBATCH -o /scratch4/workspace/jade_fiorilla_student_uml_edu-rawseqpic/23LVKKLT3/slurm-checksum-%j.out  # %j = job ID
 
 
-# navigate to dir with seq files 
-#seq_dir=''
-cd //scratch4/workspace/jade_fiorilla_student_uml_edu-rawseqpic/23LVKKLT3/10606
+# Navigate to directory with sequencing files 
+cd /scratch4/workspace/jade_fiorilla_student_uml_edu-rawseqpic/23LVKKLT3/10606
 
 #!/bin/bash
 
-# File to store the MD5 checksums of previously processed files
+# File to store the MD5 checksums of processed files
 checksum_file="md5_checksums.txt"
 
 # Loop through all .gz files in the current directory
@@ -23,7 +22,7 @@ for file in ./*.gz; do
         # Extract the filename
         filename=$(basename "$file") 
 
-        # Check if the file has already been processed by looking in the checksum file
+        # Check if the file has already been processed
         if grep -q "$filename" "$checksum_file"; then
             echo "$filename has already been processed. Skipping..."
             continue  # Skip this file and move to the next one
