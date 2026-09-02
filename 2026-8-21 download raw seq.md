@@ -3,6 +3,3 @@
 **Request**: PCR-free library prep, shotgun metagenomic sequencing, 50M reads in each direction, 2x150bp 
 **Provider**: GC3F
 **Data received**: 2026-8-13
-
-
-kk
