@@ -3,7 +3,7 @@ GC3F provided a md5sums file and a check script in each sub-project INFO folder.
 
 ## Log
 Tried to use Brooke's code for computing md5sums but did not work
-- [md5check.txt](https://github.com/jfiorilla/PIC_DFG_metagenomics/blob/main/md5check.txt)
+- [md5check.txt](https://github.com/jfiorilla/PIC_DFG_metagenomics/blob/5bf5fb617679b3a80b36e0aff3753b45b5ae4c1a/bash-scripts/md5check.txt)
 - could be because of error in double `#!/bin/bash` 
 
 Looked at files provided by GC3F and saw they already have a md5sums file so did some more digging in the INFO directory
@@ -22,9 +22,9 @@ For 10605 tried again to combine the provided code and the sbatch parameters, th
 - same error not finding INFO/md5sums.txt folder
 
 This time I deleted the GC3F code about finding the directory and just added a specific line of code to navigate to the sequencing files 
-- [md5check-10605.txt](https://github.com/jfiorilla/PIC_DFG_metagenomics/blob/main/md5check-10605.txt)
+- [md5check-10605.txt](https://github.com/jfiorilla/PIC_DFG_metagenomics/blob/5bf5fb617679b3a80b36e0aff3753b45b5ae4c1a/bash-scripts/md5check-10605.txt)
 - working but just as slow I think
-- used `tail -F slurm-checksum-63633790.out` to watch readouts in terminal
+- used `tail -F slurm-checksum-63633790.out` to watch readouts in terminal (number is unity job ID)
 - can also check file on unity browser to monitor 
 
 Confirmed all files in 10605 were transferred without corruption

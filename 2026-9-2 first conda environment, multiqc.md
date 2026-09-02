@@ -1,9 +1,10 @@
-## Log
 Things I learned this morning:
 - only code run in ipnyb is r; all the bash script is just included for posterity and is actually run in terminal ssh unity 
 - downloaded vscode - think it will be a good place to edit bash scripts as opposed to textedit, connected to the same repo as this so will need to stay on top of commits etc
 - need to create [conda environment](https://unityhpc.org/documentation/software/conda/) with packages - unity uses miniforge rather than miniconda
 
+## Workflow
+(in terminal ssh unity)
 Load conda: `module load conda/latest`
 Create environment: `conda create --name seqproc-env`
 Code to activate: `conda activate seqproc-env`
