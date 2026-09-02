@@ -3,8 +3,5 @@
 **Request**: PCR-free library prep, shotgun metagenomic sequencing, 50M reads in each direction, 2x150bp 
 **Provider**: GC3F
 **Data received**: 2026-8-13
-<<<<<<< Updated upstream
-=======
 
 Used a unity interactive CLI job to run code provided by genohub to download sequencing data 
->>>>>>> Stashed changes
