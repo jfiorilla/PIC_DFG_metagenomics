@@ -4,4 +4,5 @@
 **Provider**: GC3F
 **Data received**: 2026-8-13
 
-Used a unity interactive CLI job to run code provided by genohub to download sequencing data 
+Used a unity interactive CLI job to run code provided by genohub to download sequencing data into scratch space called `rawseqpic`
+- *See ORCC_16S repo for more details on how to do this*
