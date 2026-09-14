@@ -17,7 +17,7 @@ OUTPUT_RESULTS='/work/pi_sarah_gignouxwolfsohn_uml_edu/jade/trimmed'
 NSLOTS=4  
 
 #create filename if not already created
-ls $FILEPATH -1 | sed 's/_R.*_001.fastq.gz//' | uniq | cat > $OUTPUT_RESULTS/'pic10604_sampleids.txt'
+ls $FILEPATH -1 | sed 's/_R.*_001.fastq.gz//' | uniq > "$OUTPUT_RESULTS/pic10604_sampleids.txt"
 
 SAMPLE_NAMES_FILE="/work/pi_sarah_gignouxwolfsohn_uml_edu/jade/trimmed/pic10604_sampleids.txt"
 
