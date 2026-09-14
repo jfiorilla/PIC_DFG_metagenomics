@@ -1,0 +1,3 @@
+sp:
+  fastqc/zip:
+    fn: "*.fastqc.zip"
