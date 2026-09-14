@@ -1,5 +1,5 @@
-## TLDR
-GC3F provided a md5sums file and a check script in each sub-project INFO folder. I ran the script as they suggested directly in terminal: `bash check_downloads.sh` and can confirm that all files matched/were not corrupted. 
+
+TLDR: GC3F provided a md5sums file and a check script in each sub-project INFO folder. I ran the script as they suggested directly in terminal: `bash check_downloads.sh` and can confirm that all files matched/were not corrupted. 
 
 ## Log
 Tried to use Brooke's code for computing md5sums but did not work
