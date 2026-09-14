@@ -8,7 +8,7 @@
 
 
 # Navigate to directory with sequencing files 
-cd /scratch4/workspace/jade_fiorilla_student_uml_edu-rawseqpic/23LVKKLT3/10606
+cd /scratch4/workspace/jade_fiorilla_student_uml_edu-rawseqpic/23LVKKLT3/10604
 
 # File to store the MD5 checksums of processed files
 checksum_file="md5_checksums.txt"
