@@ -12,14 +12,14 @@ module load conda/latest
 conda activate seqproc-env
 
 # Define the paths and variables
-FILEPATH='/scratch4/workspace/jade_fiorilla_student_uml_edu-rawseqpic/23LVKKLT3/10604'
-OUTPUT_RESULTS='/work/pi_sarah_gignouxwolfsohn_uml_edu/jade/trimmed'
+FILEPATH='/scratch4/workspace/jade_fiorilla_student_uml_edu-rawseqpic/23LVKKLT3/10606'
+OUTPUT_RESULTS='/scratch4/workspace/jade_fiorilla_student_uml_edu-rawseqpic/23LVKKLT3/10606/trimmed'
 NSLOTS=4  
 
 #create filename if not already created
-ls $FILEPATH -1 | sed 's/_R.*_001.fastq.gz//' | uniq > "$OUTPUT_RESULTS/pic10604_sampleids.txt"
+ls $FILEPATH -1 | sed 's/_R.*_001.fastq.gz//' | uniq > "$OUTPUT_RESULTS/10606_sampleids.txt"
 
-SAMPLE_NAMES_FILE="/work/pi_sarah_gignouxwolfsohn_uml_edu/jade/trimmed/pic10604_sampleids.txt"
+SAMPLE_NAMES_FILE="/scratch4/workspace/jade_fiorilla_student_uml_edu-rawseqpic/23LVKKLT3/10606/trimmed/10606_sampleids.txt"
 
 # Check if the file exists
 if [ ! -e "$SAMPLE_NAMES_FILE" ]; then
