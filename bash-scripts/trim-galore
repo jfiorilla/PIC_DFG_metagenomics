@@ -4,7 +4,7 @@
 #SBATCH -p cpu  # Partition
 #SBATCH -t 24:00:00  # Job time limit
 #SBATCH --mail-type=ALL
-#SBATCH -o /work/pi_sarah_gignouxwolfsohn_uml_edu/jade/slurm-qc-%j.out  # %j = job ID
+#SBATCH -o /scratch4/workspace/jade_fiorilla_student_uml_edu-rawseqpic/23LVKKLT3/10604/trimmed/slurm-qc-%j.out  # %j = job ID
 
 module load conda/latest
 
@@ -12,14 +12,14 @@ module load conda/latest
 conda activate seqproc-env
 
 # Define the paths and variables
-FILEPATH='/scratch4/workspace/jade_fiorilla_student_uml_edu-rawseqpic/23LVKKLT3/10606'
-OUTPUT_RESULTS='/scratch4/workspace/jade_fiorilla_student_uml_edu-rawseqpic/23LVKKLT3/10606/trimmed'
+FILEPATH='/scratch4/workspace/jade_fiorilla_student_uml_edu-rawseqpic/23LVKKLT3/10604'
+OUTPUT_RESULTS='/scratch4/workspace/jade_fiorilla_student_uml_edu-rawseqpic/23LVKKLT3/10604/trimmed'
 NSLOTS=4  
 
 #create filename if not already created
-ls $FILEPATH -1 | sed 's/_R.*_001.fastq.gz//' | uniq > "$OUTPUT_RESULTS/10606_sampleids.txt"
+ls $FILEPATH -1 | sed 's/_R.*_001.fastq.gz//' | uniq > "$OUTPUT_RESULTS/10604_sampleids.txt"
 
-SAMPLE_NAMES_FILE="/scratch4/workspace/jade_fiorilla_student_uml_edu-rawseqpic/23LVKKLT3/10606/trimmed/10606_sampleids.txt"
+SAMPLE_NAMES_FILE="/scratch4/workspace/jade_fiorilla_student_uml_edu-rawseqpic/23LVKKLT3/10604/trimmed/10604_sampleids.txt"
 
 # Check if the file exists
 if [ ! -e "$SAMPLE_NAMES_FILE" ]; then
